@@ -1,0 +1,544 @@
+body {
+  background-color: cadetblue;
+  padding-top: 4rem;
+}
+
+html {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+ticker-tape {
+  color: orangered;
+}
+
+section#banner,
+section#about,
+section#popular,
+section#cart,
+section#contact {
+  min-height: 70vh;
+}
+
+section#about {
+  text-align: center;
+}
+
+section#nav {
+  position: fixed;
+  width: 100%;
+  left: 0;
+  top: 0;
+  z-index: 1;
+}
+
+section#nav > header > nav {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 1rem;
+  background-color: dimgray;
+}
+
+section#nav > header > nav > a {
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  background-color: blanchedalmond;
+  text-decoration: none;
+  color: black;
+}
+
+section#popular {
+  display: flex;
+}
+
+section#popular > .card {
+  background-color: navajowhite;
+  border-radius: 1rem;
+  padding: 1rem;
+  height: 300px;
+  width: 30%;
+  margin: 0 0.5rem;
+}
+
+section#popular > .card > img {
+  width: 100%;
+  border-radius: 1rem;
+}
+
+section#swatches > div.swatches {
+  display: grid;
+  justify-items: center;
+  gap: 0.1rem;
+  grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
+}
+
+div.swatch:nth-child(0) {
+  background-color: hsl(0deg, 100%, 50%);
+}
+
+div.swatch:nth-child(1) {
+  background-color: hsl(3.3deg, 100%, 50%);
+}
+
+div.swatch:nth-child(2) {
+  background-color: hsl(6.6deg, 100%, 50%);
+}
+
+div.swatch:nth-child(3) {
+  background-color: hsl(9.9deg, 100%, 50%);
+}
+
+div.swatch:nth-child(4) {
+  background-color: hsl(13.2deg, 100%, 50%);
+}
+
+div.swatch:nth-child(5) {
+  background-color: hsl(16.5deg, 100%, 50%);
+}
+
+div.swatch:nth-child(6) {
+  background-color: hsl(19.8deg, 100%, 50%);
+}
+
+div.swatch:nth-child(7) {
+  background-color: hsl(23.1deg, 100%, 50%);
+}
+
+div.swatch:nth-child(8) {
+  background-color: hsl(26.4deg, 100%, 50%);
+}
+
+div.swatch:nth-child(9) {
+  background-color: hsl(29.7deg, 100%, 50%);
+}
+
+div.swatch:nth-child(10) {
+  background-color: hsl(33deg, 100%, 50%);
+}
+
+div.swatch:nth-child(11) {
+  background-color: hsl(36.3deg, 100%, 50%);
+}
+
+div.swatch:nth-child(12) {
+  background-color: hsl(39.6deg, 100%, 50%);
+}
+
+div.swatch:nth-child(13) {
+  background-color: hsl(42.9deg, 100%, 50%);
+}
+
+div.swatch:nth-child(14) {
+  background-color: hsl(46.2deg, 100%, 50%);
+}
+
+div.swatch:nth-child(15) {
+  background-color: hsl(49.5deg, 100%, 50%);
+}
+
+div.swatch:nth-child(16) {
+  background-color: hsl(52.8deg, 100%, 50%);
+}
+
+div.swatch:nth-child(17) {
+  background-color: hsl(56.1deg, 100%, 50%);
+}
+
+div.swatch:nth-child(18) {
+  background-color: hsl(59.4deg, 100%, 50%);
+}
+
+div.swatch:nth-child(19) {
+  background-color: hsl(62.7deg, 100%, 50%);
+}
+
+div.swatch:nth-child(20) {
+  background-color: hsl(66deg, 100%, 50%);
+}
+
+div.swatch:nth-child(21) {
+  background-color: hsl(69.3deg, 100%, 50%);
+}
+
+div.swatch:nth-child(22) {
+  background-color: hsl(72.6deg, 100%, 50%);
+}
+
+div.swatch:nth-child(23) {
+  background-color: hsl(75.9deg, 100%, 50%);
+}
+
+div.swatch:nth-child(24) {
+  background-color: hsl(79.2deg, 100%, 50%);
+}
+
+div.swatch:nth-child(25) {
+  background-color: hsl(82.5deg, 100%, 50%);
+}
+
+div.swatch:nth-child(26) {
+  background-color: hsl(85.8deg, 100%, 50%);
+}
+
+div.swatch:nth-child(27) {
+  background-color: hsl(89.1deg, 100%, 50%);
+}
+
+div.swatch:nth-child(28) {
+  background-color: hsl(92.4deg, 100%, 50%);
+}
+
+div.swatch:nth-child(29) {
+  background-color: hsl(95.7deg, 100%, 50%);
+}
+
+div.swatch:nth-child(30) {
+  background-color: hsl(99deg, 100%, 50%);
+}
+
+div.swatch:nth-child(31) {
+  background-color: hsl(102.3deg, 100%, 50%);
+}
+
+div.swatch:nth-child(32) {
+  background-color: hsl(105.6deg, 100%, 50%);
+}
+
+div.swatch:nth-child(33) {
+  background-color: hsl(108.9deg, 100%, 50%);
+}
+
+div.swatch:nth-child(34) {
+  background-color: hsl(112.2deg, 100%, 50%);
+}
+
+div.swatch:nth-child(35) {
+  background-color: hsl(115.5deg, 100%, 50%);
+}
+
+div.swatch:nth-child(36) {
+  background-color: hsl(118.8deg, 100%, 50%);
+}
+
+div.swatch:nth-child(37) {
+  background-color: hsl(122.1deg, 100%, 50%);
+}
+
+div.swatch:nth-child(38) {
+  background-color: hsl(125.4deg, 100%, 50%);
+}
+
+div.swatch:nth-child(39) {
+  background-color: hsl(128.7deg, 100%, 50%);
+}
+
+div.swatch:nth-child(40) {
+  background-color: hsl(132deg, 100%, 50%);
+}
+
+div.swatch:nth-child(41) {
+  background-color: hsl(135.3deg, 100%, 50%);
+}
+
+div.swatch:nth-child(42) {
+  background-color: hsl(138.6deg, 100%, 50%);
+}
+
+div.swatch:nth-child(43) {
+  background-color: hsl(141.9deg, 100%, 50%);
+}
+
+div.swatch:nth-child(44) {
+  background-color: hsl(145.2deg, 100%, 50%);
+}
+
+div.swatch:nth-child(45) {
+  background-color: hsl(148.5deg, 100%, 50%);
+}
+
+div.swatch:nth-child(46) {
+  background-color: hsl(151.8deg, 100%, 50%);
+}
+
+div.swatch:nth-child(47) {
+  background-color: hsl(155.1deg, 100%, 50%);
+}
+
+div.swatch:nth-child(48) {
+  background-color: hsl(158.4deg, 100%, 50%);
+}
+
+div.swatch:nth-child(49) {
+  background-color: hsl(161.7deg, 100%, 50%);
+}
+
+div.swatch:nth-child(50) {
+  background-color: hsl(165deg, 100%, 50%);
+}
+
+div.swatch:nth-child(51) {
+  background-color: hsl(168.3deg, 100%, 50%);
+}
+
+div.swatch:nth-child(52) {
+  background-color: hsl(171.6deg, 100%, 50%);
+}
+
+div.swatch:nth-child(53) {
+  background-color: hsl(174.9deg, 100%, 50%);
+}
+
+div.swatch:nth-child(54) {
+  background-color: hsl(178.2deg, 100%, 50%);
+}
+
+div.swatch:nth-child(55) {
+  background-color: hsl(181.5deg, 100%, 50%);
+}
+
+div.swatch:nth-child(56) {
+  background-color: hsl(184.8deg, 100%, 50%);
+}
+
+div.swatch:nth-child(57) {
+  background-color: hsl(188.1deg, 100%, 50%);
+}
+
+div.swatch:nth-child(58) {
+  background-color: hsl(191.4deg, 100%, 50%);
+}
+
+div.swatch:nth-child(59) {
+  background-color: hsl(194.7deg, 100%, 50%);
+}
+
+div.swatch:nth-child(60) {
+  background-color: hsl(198deg, 100%, 50%);
+}
+
+div.swatch:nth-child(61) {
+  background-color: hsl(201.3deg, 100%, 50%);
+}
+
+div.swatch:nth-child(62) {
+  background-color: hsl(204.6deg, 100%, 50%);
+}
+
+div.swatch:nth-child(63) {
+  background-color: hsl(207.9deg, 100%, 50%);
+}
+
+div.swatch:nth-child(64) {
+  background-color: hsl(211.2deg, 100%, 50%);
+}
+
+div.swatch:nth-child(65) {
+  background-color: hsl(214.5deg, 100%, 50%);
+}
+
+div.swatch:nth-child(66) {
+  background-color: hsl(217.8deg, 100%, 50%);
+}
+
+div.swatch:nth-child(67) {
+  background-color: hsl(221.1deg, 100%, 50%);
+}
+
+div.swatch:nth-child(68) {
+  background-color: hsl(224.4deg, 100%, 50%);
+}
+
+div.swatch:nth-child(69) {
+  background-color: hsl(227.7deg, 100%, 50%);
+}
+
+div.swatch:nth-child(70) {
+  background-color: hsl(231deg, 100%, 50%);
+}
+
+div.swatch:nth-child(71) {
+  background-color: hsl(234.3deg, 100%, 50%);
+}
+
+div.swatch:nth-child(72) {
+  background-color: hsl(237.6deg, 100%, 50%);
+}
+
+div.swatch:nth-child(73) {
+  background-color: hsl(240.9deg, 100%, 50%);
+}
+
+div.swatch:nth-child(74) {
+  background-color: hsl(244.2deg, 100%, 50%);
+}
+
+div.swatch:nth-child(75) {
+  background-color: hsl(247.5deg, 100%, 50%);
+}
+
+div.swatch:nth-child(76) {
+  background-color: hsl(250.8deg, 100%, 50%);
+}
+
+div.swatch:nth-child(77) {
+  background-color: hsl(254.1deg, 100%, 50%);
+}
+
+div.swatch:nth-child(78) {
+  background-color: hsl(257.4deg, 100%, 50%);
+}
+
+div.swatch:nth-child(79) {
+  background-color: hsl(260.7deg, 100%, 50%);
+}
+
+div.swatch:nth-child(80) {
+  background-color: hsl(264deg, 100%, 50%);
+}
+
+div.swatch:nth-child(81) {
+  background-color: hsl(267.3deg, 100%, 50%);
+}
+
+div.swatch:nth-child(82) {
+  background-color: hsl(270.6deg, 100%, 50%);
+}
+
+div.swatch:nth-child(83) {
+  background-color: hsl(273.9deg, 100%, 50%);
+}
+
+div.swatch:nth-child(84) {
+  background-color: hsl(277.2deg, 100%, 50%);
+}
+
+div.swatch:nth-child(85) {
+  background-color: hsl(280.5deg, 100%, 50%);
+}
+
+div.swatch:nth-child(86) {
+  background-color: hsl(283.8deg, 100%, 50%);
+}
+
+div.swatch:nth-child(87) {
+  background-color: hsl(287.1deg, 100%, 50%);
+}
+
+div.swatch:nth-child(88) {
+  background-color: hsl(290.4deg, 100%, 50%);
+}
+
+div.swatch:nth-child(89) {
+  background-color: hsl(293.7deg, 100%, 50%);
+}
+
+div.swatch:nth-child(90) {
+  background-color: hsl(297deg, 100%, 50%);
+}
+
+div.swatch:nth-child(91) {
+  background-color: hsl(300.3deg, 100%, 50%);
+}
+
+div.swatch:nth-child(92) {
+  background-color: hsl(303.6deg, 100%, 50%);
+}
+
+div.swatch:nth-child(93) {
+  background-color: hsl(306.9deg, 100%, 50%);
+}
+
+div.swatch:nth-child(94) {
+  background-color: hsl(310.2deg, 100%, 50%);
+}
+
+div.swatch:nth-child(95) {
+  background-color: hsl(313.5deg, 100%, 50%);
+}
+
+div.swatch:nth-child(96) {
+  background-color: hsl(316.8deg, 100%, 50%);
+}
+
+div.swatch:nth-child(97) {
+  background-color: hsl(320.1deg, 100%, 50%);
+}
+
+div.swatch:nth-child(98) {
+  background-color: hsl(323.4deg, 100%, 50%);
+}
+
+div.swatch:nth-child(99) {
+  background-color: hsl(326.7deg, 100%, 50%);
+}
+
+div.swatch:nth-child(100) {
+  background-color: hsl(330deg, 100%, 50%);
+}
+
+section#cart > #items > li {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: cornsilk;
+  border-radius: 2rem;
+  margin: 0.5rem 0;
+  padding: 0.5rem 0;
+}
+
+ul {
+  list-style-type: none;
+  list-style-position: inside;
+  margin: 0;
+  padding: 0;
+}
+
+section#cart > #items > li > span > span:nth-child(6),
+section#cart > #items > li > span > span:nth-child(2) {
+  font-weight: bold;
+}
+
+section#cart > #items > li > span > input.update {
+  width: 40px;
+  padding: 1rem;
+}
+
+section#cart > #items > li > span > button {
+  padding: 1rem;
+}
+
+section#cart > #total {
+  color: blue;
+  font-size: x-large;
+  font-weight: bold;
+}
+
+section#contact > div > form {
+  display: flex;
+  flex-direction: column;
+}
+
+section#contact > div > form > label {
+  line-height: 1.7;
+}
+
+section#contact > div > form > label:nth-child(1),
+section#contact > div > form > label:nth-child(2),
+section#contact > div > form > label:nth-child(3) {
+  display: flex;
+  flex-direction: column;
+}
+
+section#contact > div > form > label > input[type=text],
+section#contact > div > form > button {
+  padding: 1rem;
+  font-size: large;
+}
+
+section#contact > div > form > label > textarea {
+  font-size: large;
+  padding: 1.5rem 1rem;
+}
+
+/*# sourceMappingURL=styles.css.map */

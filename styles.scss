@@ -1,0 +1,147 @@
+body {
+  background-color: cadetblue;
+  padding-top: 4rem;
+}
+
+html {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+ticker-tape {
+  color: orangered;
+}
+
+section#banner,
+section#about,
+section#popular,
+section#cart,
+section#contact {
+  min-height: 70vh;
+}
+
+section#about {
+  text-align: center;
+}
+
+section#nav {
+  position: fixed;
+  width: 100%;
+  left: 0;
+  top: 0;
+  z-index: 1;
+}
+
+section#nav > header > nav {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 1rem;
+  background-color: dimgray;
+}
+
+section#nav > header > nav > a {
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  background-color: blanchedalmond;
+  text-decoration: none;
+  color: black;
+}
+
+section#popular {
+  display: flex;
+}
+
+section#popular > .card {
+  background-color: navajowhite;
+  border-radius: 1rem;
+  padding: 1rem;
+  height: 300px;
+  width: 30%;
+  margin: 0 0.5rem;
+}
+
+section#popular > .card > img {
+  width: 100%;
+  border-radius: 1rem;
+}
+
+section#swatches > div.swatches {
+  display: grid;
+  justify-items: center;
+  gap: 0.1rem;
+  grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
+}
+
+@for $i from 0 through 100 {
+  div.swatch:nth-child(#{$i}) {
+    background-color: hsl($i * 3.3, 100%, 50%);
+  }
+}
+
+section#cart > #items > li {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: cornsilk;
+  border-radius: 2rem;
+  margin: 0.5rem 0;
+  padding: 0.5rem 0;
+}
+
+ul {
+  list-style-type: none;
+  list-style-position: inside;
+  margin: 0;
+  padding: 0;
+}
+
+section#cart > #items > li > span > span:nth-child(6),
+section#cart > #items > li > span > span:nth-child(2) {
+  font-weight: bold;
+}
+
+section#cart > #items > li > span > input.update {
+  width: 40px;
+  padding: 1rem;
+}
+
+section#cart > #items > li > span > button {
+  padding: 1rem;
+}
+
+section#cart > #total {
+  color: blue;
+  font-size: x-large;
+  font-weight: bold;
+}
+
+section#contact > div > form {
+  display: flex;
+  flex-direction: column;
+}
+
+section#contact > div > form > label {
+  line-height: 1.7;
+}
+
+section#contact > div > form > label:nth-child(1),
+section#contact > div > form > label:nth-child(2),
+section#contact > div > form > label:nth-child(3)
+{
+  display: flex;
+  flex-direction: column;
+}
+
+section#contact > div > form > label > input[type=text],
+section#contact > div > form > button {
+  padding: 1rem;
+  font-size: large;
+}
+
+section#contact > div > form > label > textarea {
+  font-size: large;
+  padding: 1.5rem 1rem;
+}
+
+
